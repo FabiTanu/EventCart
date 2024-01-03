@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'connection/config.php';
 session_start();
 $loginEmail = $_POST['loginEmail'];
 $loginpass = $_POST['loginpass'];

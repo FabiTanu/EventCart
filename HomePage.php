@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #420303;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">EventCart</a>
+            <a class="navbar-brand" href="#container">EventCart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                 style="background-color: azure;">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,7 +61,7 @@
     <div class="title">
         <h1><span>P</span>ackages</h1>
     </div>
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <div class="col-4">
                 <div class="package">

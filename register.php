@@ -17,53 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        .row {
-            background-image: url(img/wallpaper.png);
-            background-size: cover;
-            border-radius: 30px;
-            box-shadow: 12px 12px 12px;
-            position: relative;
-            height: 40rem;
-        }
-
-        .login {
-            padding-top: 1rem;
-        }
-
-        .login img {
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
-            height: 40rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        .login h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            font-family: 'Pacifico', cursive;
-        }
-
-        .input-box {
-            height: 50px;
-            width: 70%;
-            border-radius: 60px;
-        }
-
-        .btn {
-            height: 50px;
-            width: 50%;
-            background: rgba(201, 240, 210, 0.6);
-            border-radius: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="css\style.css">
 
 
 </head>

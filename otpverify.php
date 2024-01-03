@@ -27,7 +27,7 @@ if (empty($_SESSION['name'])) {
     header('location:index.php');
 }
 //include_once('connection.php');
-include 'config.php';
+include 'connection/config.php';
 if (isset($_REQUEST['otp_verify'])) {
     $otp = $_REQUEST['otp'];
     $select_query = mysqli_query($connection, "select * from otp_check where otp='$otp' and is_expired!=1 and NOW()<=DATE_ADD(create_at,interval 5 minute)");
