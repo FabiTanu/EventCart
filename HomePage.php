@@ -4,311 +4,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bd.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/homepage.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #420303;">
-        <div class="container">
-            <a class="navbar-brand" href="#container">EventCart</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                style="background-color: azure;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
+    <!--navbar-->
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Packages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="wedding.php">Wedding</a></li>
-                            <li><a class="dropdown-item" href="birthday.php">Birthday</a></li>
-                            <li><a class="dropdown-item" href="others.php">Other Event</a></li>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#">EventCart</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">EventCart</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links" id="linkscall">
+                    <li><a href="HomePage.php">HOME</a></li>
+                    <li>
+                        <a href="#">About</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="OurTeam.php">Preferred Partners</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
+                    <li>
+                        <a href="#">Services</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="wedding.php">Weeding</a></li>
+                            <li><a href="#">Corporate Events</a></li>
+                            <li><a href="birthday.php">Birthday</a></li>
+                            <li><a href="#">Social Activities</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.php">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="OurTeam.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logOut.php">LogOut</a>
-                    </li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="review.php">Review</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+
                 </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
             </div>
         </div>
     </nav>
 
 
-    <?php
-    @include 'slide.php';
-    ?>
+    <!-- intro -->
+    <section class="section intro" aria-label="home">
+        <div class="container">
 
-    <!------packages----->
-    <div class="title">
-        <h1><span>P</span>ackages</h1>
-    </div>
-    <div class="container" id="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="package">
-                    <h2>Basic Package</h2>
-                    <p>Price: $299.99</p>
-                    <button><a href="basic.php" style="color: azure;"> See Details </a></button>
+            <div class="intro-content">
+
+                <h1 class="h1 intro-title">
+                    CAPTURE HAPPY MOMENTS WITH US
+                    <span class="span">EVENT <br> PLANNER</span>
+                </h1>
+
+                <p class="section-text">
+                    Your special day is one of the most singificant milestones in your life, and we understand the
+                    importance of making it cetraordinary. Our mission is to alleviate the stress of plannung, allowing
+                    you to savor every moment of your special day.
+                </p>
+
+                <a href="#" class="btn">
+                    <span class="span">View Collection</span>
+                </a>
+
+            </div>
+
+            <div class="wrapper">
+                <div class="intro-banner-1 img-holder" style="--width: 400; --height: 550;">
+                    <img src="image/bi.jpg" width="400" height="550" alt="view of assortment of decor for interior shop"
+                        class="img-cover">
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="package">
-                    <h2>Premium Package</h2>
-                    <p>Price: $599.99</p>
-                    <button><a href="premium.php" style="color: azure;"> See Details </a></button>
+
+                <div class="intro-banner-2 img-holder" style="--width: 500; --height: 850;">
+                    <img src="image/wi.jpg" width="500" height="850" alt="ceramic craft ware" class="img-cover">
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="package">
-                    <h2>Deluxe Package</h2>
-                    <p>Price: $999.99</p>
-                    <a href="deluxe.php"><button style="color: azure;">See Details</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
+            </div>
 
-
-
-    <!------------------------services-------------------->
-    <section class="service" id="service">
-        <div class="title">
-            <h1><span>S</span>ervice</h1>
-        </div>
-        <div class="services-row">
-            <div class="services-col">
-                <i class="fas fa-book-open"></i>
-                <h2>Invitation</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
-            <div class="services-col">
-                <i class="fas fa-camera"></i>
-                <h2>Photography & Video</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
-            <div class="services-col">
-                <i class="fas fa-brush"></i>
-                <h2>Beauty & Makeup</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
-            <div class="services-col">
-                <i class="fas fa-birthday-cake"></i>
-                <h2>Birthday cake</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
-            <div class="services-col">
-                <i class="fas fa-music"></i>
-                <h2>music band</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
-            <div class="services-col">
-                <i class="fas fa-utensils"></i>
-                <h2>Catering</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
         </div>
     </section>
 
-    <!------------------Gallery------------------>
-    <?php
-    @include 'gallery.php';
+    <!-- About -->
 
-    ?>
 
-    <!----------------------------venue Section-------------->
-    <section class="venue" id="venue">
-        <div class="title">
-            <h1><span>V</span>enues</h1>
-        </div>
-        <div class="venue-list">
-            <div class="venue-box">
-                <img src="img/GrandSylhet.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Grand Sylhet</p>
-                    <a href="https://grandsylhet.com/"><button class="btn" style="color: aliceblue; ">More
-                            Info</button></a>
-                </div>
+    <section class="section about" aria-label="about">
+        <div class="container">
+            <div class="wrapper">
+                <figure class="about-banner about-banner-1 img-holder">
+                    <img src="image/cpi.jpg" alt="picture coming soon" class="img-cover">
+                </figure>
+                <h2 class="h2 section-title">Make easy you event</h2>
             </div>
-            <div class="venue-box">
-                <img src="img/hgSultan.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Hotel Grand Sultan</p>
-                    <a href="https://www.grandsultanresort.com/"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
+            <figure class="about-banner about-banner-2 img-holder">
+                <img src="image/bi.webp" alt="picture coming soon" class="img-cover">
+            </figure>
+            <div class="about-content">
+
+                <h3 class="h2 section-title">Event planning is Our Passion</h3>
+
+                <p class="section-text">
+                    Simplifies planning for weddings, birthdays, corporate, and parties.
+                </p>
+
+                <a href="#" class="btn">
+                    <span class="span">Read More</span>
+                </a>
+
+                <figure class="about-banner about-banner-3 img-holder">
+                    <img src="image/vi.jpg" alt="picture coming soon" class="img-cover">
+                </figure>
+
             </div>
-            <div class="venue-box">
-                <img src="img/khans.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>khan Palace Convention Hall</p>
-                    <a href="https://kpchbd.com/"><button class="btn" style="color: aliceblue;">More Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/roseView.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Hotel Rose View</p>
-                    <a href="https://www.roseviewhotel.com/"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/haat.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>HAAT Food Court</p>
-                    <a href="https://www.facebook.com/haatbdnk/"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/kushiara.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Kushiara Convention Hall</p>
-                    <a href="https://www.facebook.com/kushiara.ich/"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/meatup.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Meatup</p>
-                    <a href="https://www.facebook.com/meatuprestaurant"><button class="btn"
-                            style="color: aliceblue;">More Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/Cremo.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Cremo Coffee</p>
-                    <a href="https://www.facebook.com/CremoCoffee.bd"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/bd1.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Sky Dine</p>
-                    <a href="https://www.facebook.com/skydinesylhet/"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/cclube.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>The Coffee Club</p>
-                    <a href="https://www.facebook.com/thecoffeeclubbd/"><button class="btn"
-                            style="color: aliceblue;">More Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/union.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Unoon</p>
-                    <a href="https://www.facebook.com/unoon.eidgah"><button class="btn" style="color: aliceblue;">More
-                            Info</button></a>
-                </div>
-            </div>
-            <div class="venue-box">
-                <img src="img/bd3.jpg" alt="img">
-                <div class="venue-info">
-                    <h2>Sylhet</h2>
-                    <p>Platinum Lounge</p>
-                    <a href="https://www.facebook.com/PlatinumLoungeSylhet/"><button class="btn"
-                            style="color: aliceblue;">More Info</button></a>
-                </div>
-            </div>
+
         </div>
     </section>
 
 
-    <!------------------------footer-------------------->
-    <footer>
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-6">
-                    <div class="title">
-                        <h1><span class="text-uppercase"> Quick Links</span></h1>
+    <!-- collection -->
+
+    <section class="section collection text-center" aria-labelledby="collection-label">
+        <div class="container">
+
+            <h2 class="h2 section-title" id="collection-label">
+                Event Collection
+            </h2>
+            <br>
+            <ul class="grid-list">
+
+                <li>
+                    <div class="collection-card">
+                        <figure class="card-banner img-holder">
+                            <img src="image/bi2.jpg" alt="Birthday picture" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">Birthday</h3>
+                            <a href="#" class="btn">
+                                <span class="span">View Gallery</span>
+                            </a>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="HomePage.php" class="text-dark">Home</a>
-                        </li>
-                        <li>
-                            <a href="OurTeam.php" class="text-dark">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">PACKAGE</a>
-                        </li>
-                        <li>
-                            <a href="gallery.php" class="text-dark">GALLERY</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <div class="title">
-                        <h1><span class="text-uppercase">Links</span></h1>
+                </li>
+                <li>
+                    <div class="collection-card">
+                        <figure class="card-banner img-holder">
+                            <img src="image/cpi2.jpg" alt="Corporate picture" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">Corporate</h3>
+                            <a href="#" class="btn">
+                                <span class="span">View Gallery</span>
+                            </a>
+                        </div>
                     </div>
-                    <ul>
+                </li>
+                <li>
+                    <div class="collection-card">
+                        <figure class="card-banner img-holder">
+                            <img src="image/wi3.jpg" width="500" height="550" loading="lazy" alt="Wedding picture"
+                                class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">Wedding</h3>
+                            <a href="#" class="btn">
+                                <span class="span">View Gallery</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--  #FOOTER-->
+    <!-- <section class="footSection container-fluid"> -->
+    <footer class="footer ">
+        <div class="container">
+
+            <div class="section footer-top">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">EventCart</a>
+
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porttitor augue, in
+                        convallis risus.
+                        Sed efficitur nulla quis luctus pulvinar. Cras nec pulvinar condimentum lacus.
+                    </p>
+
+                    <ul class="social-list">
+
                         <li>
-                            <a href="https://www.facebook.com/profile.php?id=100007980257976&mibextid=ZbWKwL"
-                                class="text-dark">Facebook</a>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
                         </li>
+
                         <li>
-                            <a href="https://instagram.com/farhanamunnnii?igshid=MzNlNGNkZWQ4Mg=="
-                                class="text-dark">Instagram</a>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
                         </li>
+
                         <li>
-                            <a href="https://instagram.com/farhanamunnnii?igshid=MzNlNGNkZWQ4Mg=="
-                                class="text-dark">Instagram</a>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
                         </li>
+
                         <li>
-                            <a href="https://instagram.com/farhanamunnnii?igshid=MzNlNGNkZWQ4Mg=="
-                                class="text-dark">Instagram</a>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
                         </li>
+
                     </ul>
+
                 </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Explore Us</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Collection</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Blog & News</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Support</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Feedback</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Support Center</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Our Stores</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Get in Touch</p>
+
+                    <p class="footer-text">
+                        Question or feedback?
+                        We’d love to hear from you
+                    </p>
+
+                    <a href="#" class="btn-foot">
+                        <span class="span">Contact Us</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+
+                </div>
+
             </div>
-        </div>
-        </div>
-        <div class="text-center p-3">
-            <p class="credit">Creat by <span style="color: #771153;">Munni Mahi Fabi</span></p>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    Copyright 2022 codewithFAM. All Right Reserved
+                </p>
+
+            </div>
+
         </div>
     </footer>
+    <!-- </section> -->
+
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
     <!-- Make sure to include Bootstrap JS at the end of the body -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="script.js"></script>
+
+
+
+
 </body>
 
 </html>
