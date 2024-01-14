@@ -4,20 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
     <!--navbar-->
-    <?php include 'connection/nav.php'; ?>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#">EventCart</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">EventCart</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links" id="linkscall">
+                    <li><a href="HomePage.php">HOME</a></li>
+                    <li>
+                        <a href="#">About</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="OurTeam.php">Preferred Partners</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="wedding.php">Weeding</a></li>
+                            <li><a href="#">Corporate Events</a></li>
+                            <li><a href="birthday.php">Birthday</a></li>
+                            <li><a href="#">Social Activities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="review.php">Review</a></li>
+                    <li>
+                        <a href="#">Profile</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="wedding.php">Admin</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="birthday.php">Setting</a></li>
+                            <!-- <li><a href="#">Social Activities</a></li> -->
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -39,8 +91,8 @@
                     you to savor every moment of your special day.
                 </p>
 
-                <a href="#" class="btn">
-                    <span class="span">View Collection</span>
+                <a href="user/login.php" class="btn">
+                    <span class="span">Join Now</span>
                 </a>
 
             </div>

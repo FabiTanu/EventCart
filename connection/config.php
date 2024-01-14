@@ -14,18 +14,3 @@ if (!$connection) {
     echo "<script>alert('DB connected!')</script>";
 }
 ?>
-
-
-<!-- <?php
-// $server = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "event_fam";
-// $connection = mysqli_connect("$server", "$username", "$password");
-// $select_db = mysqli_select_db($connection, $database);
-// if (!$select_db) {
-//     die("connection Faild :" . mysqli_connect_error());
-// } else {
-//     echo "<script>alert('DB connected!')</script>";
-// }
-?> -->

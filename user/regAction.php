@@ -6,10 +6,10 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 session_start();
 //include_once('connection.php');
-include 'connection/config.php';
+include '../connection/config.php';
 
 $reguname = $_REQUEST["reguname"];
 $regEmail = $_REQUEST["regEmail"];

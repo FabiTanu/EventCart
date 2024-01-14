@@ -12,13 +12,13 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="stylesheet" href="css/wedding.css">
-  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="../css/wedding.css">
+  <link rel="stylesheet" href="../css/style3.css">
 </head>
 
 <body>
   <!--navbar-->
-  <?php include 'connection/nav.php'; ?>
+  <?php include '../connection/nav.php'; ?>
 
 
 
@@ -53,7 +53,7 @@
 
         <div class="col-lg-4 col-sm-12 ">
           <div class="main_image">
-            <img src="image/birth1.jpg" alt="Event Image">
+            <img src="../image/birth1.jpg" alt="Event Image">
           </div>
         </div>
       </div>
@@ -140,22 +140,22 @@
     </div>
     <div class="invitation-row">
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
       <div class="invitation-box">
-        <img src="image/birth1.jpg" alt="">
+        <img src="../image/birth1.jpg" alt="">
       </div>
     </div>
   </section>
@@ -168,7 +168,7 @@
       </div>
       <div class="venue-list">
         <div class="venue-box">
-          <img src="img/meatup.jpg" alt="img">
+          <img src="../img/meatup.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>Meatup</p>
@@ -176,7 +176,7 @@
           </div>
         </div>
         <div class="venue-box">
-          <img src="img/Cremo.jpg" alt="img">
+          <img src="../img/Cremo.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>Cremo Coffee</p>
@@ -184,7 +184,7 @@
           </div>
         </div>
         <div class="venue-box">
-          <img src="img/bd1.jpg" alt="img">
+          <img src="../img/bd1.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>Sky Dine</p>
@@ -192,7 +192,7 @@
           </div>
         </div>
         <div class="venue-box">
-          <img src="img/cclube.jpg" alt="img">
+          <img src="../img/cclube.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>The Coffee Club</p>
@@ -200,7 +200,7 @@
           </div>
         </div>
         <div class="venue-box">
-          <img src="img/union.jpg" alt="img">
+          <img src="../img/union.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>Unoon</p>
@@ -208,7 +208,7 @@
           </div>
         </div>
         <div class="venue-box">
-          <img src="img/bd3.jpg" alt="img">
+          <img src="../img/bd3.jpg" alt="img">
           <div class="venue-info">
             <h2>Sylhet</h2>
             <p>Platinum Lounge</p>
@@ -232,7 +232,7 @@
 
           <div class="review">
             <div class="head-review">
-              <img src="image/review_2.png" width="250px">
+              <img src="../image/review_2.png" width="250px">
             </div>
             <div class="body-review">
               <div class="name-review">Sam.B</div>
@@ -251,7 +251,7 @@
           </div>
           <div class="review">
             <div class="head-review">
-              <img src="image/review_2.png" width="250px">
+              <img src="../image/review_2.png" width="250px">
             </div>
             <div class="body-review">
               <div class="name-review">Rose.F</div>
@@ -270,7 +270,7 @@
           </div>
           <div class="review">
             <div class="head-review">
-              <img src="image/review_2.png" width="250px">
+              <img src="../image/review_2.png" width="250px">
             </div>
             <div class="body-review">
               <div class="name-review">Harry.H</div>
@@ -296,205 +296,6 @@
   <!-- 
         - #BLOG
       -->
-
-  <!-- <section class="section blog" aria-labelledby="blog-label">
-        <div class="container">
-
-            <h2 class="h2 section-title text-center" id="blog-label">Blog & News</h2>
-
-            <p class="section-text text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
-            </p>
-
-            <ul class="grid-list">
-
-                <li>
-                    <div class="blog-card">
-
-                        <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                            <img src="./assets/images/blog-1.jpg" width="1024" height="683" loading="lazy"
-                                alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio"
-                                class="img-cover">
-                        </figure>
-
-                        <div class="card-content">
-
-                            <h3 class="h4">
-                                <a href="#" class="card-title">
-                                    The Detail Process Of Decorating The Clay Vase At Pottery Studio
-                                </a>
-                            </h3>
-
-                            <div class="card-meta">
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">admin</span>
-                                </a>
-
-                                <time class="card-meta-wrapper" datetime="2022-10-12">
-                                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">October 12, 2022</span>
-                                </time>
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">Tips & Trick</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="blog-card">
-
-                        <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                            <img src="./assets/images/blog-2.jpg" width="1024" height="683" loading="lazy"
-                                alt="Skills And Techniques To Make A Genuine Leather Wallet" class="img-cover">
-                        </figure>
-
-                        <div class="card-content">
-
-                            <h3 class="h4">
-                                <a href="#" class="card-title">
-                                    Skills And Techniques To Make A Genuine Leather Wallet
-                                </a>
-                            </h3>
-
-                            <div class="card-meta">
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">admin</span>
-                                </a>
-
-                                <time class="card-meta-wrapper" datetime="2022-10-12">
-                                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">October 12, 2022</span>
-                                </time>
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">Tips & Trick</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="blog-card">
-
-                        <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                            <img src="./assets/images/blog-3.jpg" width="1024" height="683" loading="lazy"
-                                alt="5 Latest And Trending Handmade Crafts For Adults And Kids" class="img-cover">
-                        </figure>
-
-                        <div class="card-content">
-
-                            <h3 class="h4">
-                                <a href="#" class="card-title">
-                                    5 Latest And Trending Handmade Crafts For Adults And Kids
-                                </a>
-                            </h3>
-
-                            <div class="card-meta">
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">admin</span>
-                                </a>
-
-                                <time class="card-meta-wrapper" datetime="2022-10-12">
-                                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">October 12, 2022</span>
-                                </time>
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">Tips & Trick</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="blog-card">
-
-                        <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                            <img src="./assets/images/blog-4.jpg" width="1024" height="683" loading="lazy"
-                                alt="Homemade Business That Now Makes Hundreds Of Millions" class="img-cover">
-                        </figure>
-
-                        <div class="card-content">
-
-                            <h3 class="h4">
-                                <a href="#" class="card-title">
-                                    Homemade Business That Now Makes Hundreds Of Millions
-                                </a>
-                            </h3>
-
-                            <div class="card-meta">
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">admin</span>
-                                </a>
-
-                                <time class="card-meta-wrapper" datetime="2022-10-12">
-                                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">October 12, 2022</span>
-                                </time>
-
-                                <a href="#" class="card-meta-wrapper">
-                                    <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                    <span class="span">Tips & Trick</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </li>
-
-            </ul>
-
-            <a href="#" class="btn">
-                <span class="span">Read More</span>
-
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-
-        </div>
-    </section> -->
-
-
-  <!-- <br><br><br><br><br><br><br><br><br><br><br><br>
- -->
 
   <!--  #FOOTER-->
   <!-- <section class="footSection container-fluid"> -->
